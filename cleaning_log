@@ -77,4 +77,18 @@ SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityHour) AS ActivityHour,
 SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityMinute) AS ActivityMinute, Calories
   FROM `my-project-for-da-course-2.bellabeat.minuteCaloriesNarrow_merged`;
   
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityMinute) AS ActivityMinute, Intensity
+  FROM `my-project-for-da-course-2.bellabeat.minuteIntensitiesNarrow_merged`;
  
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityMinute) AS ActivityMinute, Intensity
+  FROM `my-project-for-da-course-2.bellabeat.minuteMETs_merged`;
+
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', date) AS minute, value, logId
+  FROM `my-project-for-da-course-2.bellabeat.minuteSleep_merged`;
+  
+SELECT Id, PARSE_DATETIME("%m/%d/%Y %I:%M:%S %p", SleepDay) AS SleepDay, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed
+  FROM `my-project-for-da-course-2.bellabeat.sleepDay`; 
+
+SELECT Id, PARSE_DATETIME("%m/%d/%Y %I:%M:%S %p", Date) AS MeasureDate, WeightKg, WeightPounds, Fat, BMI, IsManualReport, LogId 
+  FROM `my-project-for-da-course-2.bellabeat.weightLogInfo_merged`;
+  
