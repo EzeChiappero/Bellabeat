@@ -4,11 +4,9 @@
 ### In order to doing that I need to change some data types and column names. Code below: 
 
 '''{SQL }
-SELECT *
-FROM `my-project-for-da-course-2.bellabeat.minuteSleep2` 
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteSleep2` 
 UNION ALL
-SELECT *
-FROM `my-project-for-da-course-2.bellabeat.minuteSleep`; 
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteSleep`; 
 
 SELECT * FROM `my-project-for-da-course-2.bellabeat.hourlyIntensities` 
 UNION ALL
@@ -22,20 +20,40 @@ FROM
 UNION ALL
 SELECT * FROM `my-project-for-da-course-2.bellabeat.hourlyCalories`;
 
-SELECT * 
-FROM `my-project-for-da-course-2.bellabeat.dailyActivity2` 
+SELECT * FROM `my-project-for-da-course-2.bellabeat.dailyActivity2` 
 UNION ALL
-SELECT *
-FROM `my-project-for-da-course-2.bellabeat.dailyActivity`;
+SELECT * FROM `my-project-for-da-course-2.bellabeat.dailyActivity`;
 
 SELECT 
   Id AS id,
   Time AS datetime,
   Value AS value
   FROM `my-project-for-da-course-2.bellabeat.heartrate_seconds2`;
+  
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteMETsNarrow`
+UNION ALL
+SELECT * FROM `my-project-for-da-course-2.bellabeat.MinutesMETsNarrow2`;
 
 SELECT *
   FROM `my-project-for-da-course-2.bellabeat.heartrate_seconds2`
 UNION ALL
 SELECT *
-  FROM `my-project-for-da-course-2.bellabeat.heartrate_seconds`
+  FROM `my-project-for-da-course-2.bellabeat.heartrate_seconds`;
+  
+SELECT * FROM `my-project-for-da-course-2.bellabeat.weightLogInfo2` 
+UNION ALL
+SELECT * FROM `my-project-for-da-course-2.bellabeat.weightLogInfo`;
+
+SELECT * FROM `my-project-for-da-course-2.bellabeat.hourlySteps`
+UNION ALL
+SELECT * FROM `my-project-for-da-course-2.bellabeat.hourlySteps2`;
+
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteCalories` 
+UNION ALL
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteCaloriesNarrow`;
+
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteIntensitiesNarrow` 
+UNION ALL
+SELECT * FROM `my-project-for-da-course-2.bellabeat.minuteIntensitiesNarrow2`;
+
+
