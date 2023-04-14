@@ -1,3 +1,8 @@
+#Bellabeat project. Data Cleaning log.
+
+###I lost previuos SQL statements due to power breakout but long story short, I uploaded files to BigQuery manually, and merge the tables that have two months of information.
+###In order to doing that I need to change some data types and column names. 
+
 '''{SQL }
 SELECT *
 FROM `my-project-for-da-course-2.bellabeat.minuteSleep2` 
