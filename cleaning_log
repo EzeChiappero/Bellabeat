@@ -63,5 +63,18 @@ SELECT PARSE_DATE("%m/%d/%Y", ActivityDay) FROM `my-project-for-da-course-2.bell
 
 SELECT Id, PARSE_DATE("%m/%d/%Y", ActivityDay) AS ActivityDay, StepTotal FROM `my-project-for-da-course-2.bellabeat.dailySteps`;
 
+SELECT Id, PARSE_DATETIME("%m/%d/%Y %I:%M:%S %p",Time) AS measure_time, Value FROM `my-project-for-da-course-2.bellabeat.heartrate_seconds_merged`;
 
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityHour) AS ActivityHour, Calories
+  FROM `my-project-for-da-course-2.bellabeat.hourlyCalories_merged`;
 
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityHour) AS ActivityHour, TotalIntensity, AverageIntensity
+  FROM `my-project-for-da-course-2.bellabeat.hourlyIntensities_merged`;
+
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityHour) AS ActivityHour, StepTotal
+  FROM `my-project-for-da-course-2.bellabeat.hourlySteps_merged`;
+
+SELECT Id, PARSE_DATETIME('%m/%d/%Y %I:%M:%S %p', ActivityMinute) AS ActivityMinute, Calories
+  FROM `my-project-for-da-course-2.bellabeat.minuteCaloriesNarrow_merged`;
+  
+ 
