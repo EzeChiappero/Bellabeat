@@ -1,6 +1,9 @@
 # Bellabeat project. Data Cleaning log.
 
-### I uploaded files to BigQuery manually, and merge the tables that have two months of information.
+### Download data from (https://zenodo.org/record/53894#.ZDqgec7MLIW)
+### Company (https://bellabeat.com/)
+
+### Upload files to BigQuery manually, and merge the tables that have two months of information.
 ### In order to doing that I need to change some data types and column names. Code below: 
 
 '''{SQL }
